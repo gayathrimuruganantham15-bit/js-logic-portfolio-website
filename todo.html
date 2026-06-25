@@ -1,0 +1,132 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>To-Do App | Gayathri Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <a href="#main-content" class="skip-link">
+        Skip to Main Content
+    </a>
+
+    <header>
+
+        <div class="header-container">
+
+            <h1 class="logo">
+                To-Do Manager
+            </h1>
+
+            <nav aria-label="Primary Navigation">
+
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="todo.html" aria-current="page">To-Do App</a></li>
+                </ul>
+
+                <button id="theme-toggle" class="btn">
+                    🌙 Dark Mode
+                </button>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+    <main id="main-content">
+
+        <section>
+
+            <div class="todo-container">
+
+                <h2>Task Management Application</h2>
+
+                <div class="input-section">
+
+                    <input
+                        type="text"
+                        id="taskInput"
+                        placeholder="Enter a task">
+
+                    <button
+                        id="addBtn"
+                        class="btn">
+
+                        Add Task
+
+                    </button>
+
+                </div>
+
+                <div class="filters">
+
+                    <button
+                        class="filter-btn active"
+                        data-filter="all">
+
+                        All
+
+                    </button>
+
+                    <button
+                        class="filter-btn"
+                        data-filter="active">
+
+                        Active
+
+                    </button>
+
+                    <button
+                        class="filter-btn"
+                        data-filter="completed">
+
+                        Completed
+
+                    </button>
+
+                </div>
+
+                <ul id="taskList"></ul>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>
+            &copy;
+            <span id="year"></span>
+            Gayathri. All Rights Reserved.
+        </p>
+
+    </footer>
+
+    <!-- Portfolio JS -->
+    <script src="script.js"></script>
+
+    <!-- ToDo JS -->
+    <script src="todo.js"></script>
+
+</body>
+
+</html>
+```
